@@ -1,16 +1,16 @@
-
-import Product
-import Purchases
 from Customer import customer_operations
+from Product import product_operation
+from Queries import queries
 
 
-def main():
+# This is the main menu
+
 
 def menu():
     print("Welcome to our service!!Choose option")
     print("1. Customer operations")
     print("2. Product operations")
-    print("3. queries")
+    print("3. Queries")
     print("4. Exit")
 
 
@@ -25,11 +25,13 @@ while loop == 1:
         menu()
         pass
     elif choice == 2:
-        Product
+        product_operation()
+
         menu()
         pass
     elif choice == 3:
-        Purchases
+        queries()
+
         menu()
         pass
     elif choice == 4:
@@ -38,3 +40,9 @@ while loop == 1:
     else:
         print("Please enter 1, 2, 3 or 4")
         menu()
+
+
+# Customer product system used by customer to make purchases
+
+def main():
+    menu()
